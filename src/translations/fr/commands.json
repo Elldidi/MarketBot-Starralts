@@ -1,0 +1,230 @@
+{
+  "ban": {
+    "noPermission": "❌ Vous n'avez pas la permission d'utiliser cette commande.",
+    "noMention": "❌ Vous devez mentionner un utilisateur à bannir.",
+    "noReason": "Aucune raison spécifiée",
+    "success": "✅ {user} a été banni.\nRaison: {reason}",
+    "error": "❌ Une erreur est survenue lors du bannissement.",
+    "helpTitle": "📋 Aide - Commande Ban",
+    "helpDescription": "Cette commande permet de bannir un utilisateur du serveur.",
+    "usage": "📝 Utilisation",
+    "example": "💡 Exemples",
+    "exampleValue": "+ban @user 7d Spam\n+ban @user Comportement toxique",
+    "dmTitle": "🚫 Vous avez été banni",
+    "server": "📍 Serveur",
+    "moderator": "👮 Modérateur",
+    "reason": "📄 Raison",
+    "duration": "⏱️ Durée",
+    "permanent": "Permanent",
+    "successTitle": "✅ Bannissement effectué",
+    "bannedUser": "👤 Utilisateur banni",
+    "unbanSuccess": "✅ {user} a été débanni automatiquement (fin de la durée)",
+    "textMessage": {
+      "banned": "✅ **{user}** a été banni",
+      "reason": "📄 **Raison:** {reason}",
+      "duration": "⏱️ **Durée:** {duration}"
+    },
+    "logs": {
+      "ban": {
+        "title": "🔨 Bannissement",
+        "user": "👤 Utilisateur banni",
+        "moderator": "🛡️ Modérateur",
+        "reason": "📄 Raison",
+        "duration": "⏱️ Durée"
+      },
+      "unban": {
+        "title": "🔓 Débannissement automatique",
+        "user": "👤 Utilisateur débanni",
+        "note": "📝 Note",
+        "noteValue": "Débannissement automatique (fin de la durée)",
+        "initialDuration": "⏱️ Durée initiale"
+      }
+    }
+  },
+  "unban": {
+    "noPermission": "❌ Vous n'avez pas la permission d'utiliser cette commande.",
+    "notBanned": "❌ Cet utilisateur n'est pas banni.",
+    "noReason": "Aucune raison spécifiée",
+    "success": "✅ {user} a été débanni.\nRaison: {reason}",
+    "error": "❌ Une erreur est survenue lors du débannissement.",
+    "helpTitle": "📋 Aide - Commande Unban",
+    "helpDescription": "Cette commande permet de débannir un utilisateur du serveur.",
+    "usage": "📝 Utilisation",
+    "example": "💡 Exemples",
+    "exampleValue": "+unban 123456789 Erreur de ban\n+unban 987654321 Second chance",
+    "successTitle": "✅ Débannissement effectué",
+    "unbannedUser": "👤 Utilisateur débanni",
+    "textMessage": {
+      "unbanned": "✅ **{user}** a été débanni",
+      "reason": "📄 **Raison:** {reason}"
+    },
+    "logs": {
+      "title": "🔓 Débannissement manuel",
+      "user": "👤 Utilisateur débanni",
+      "moderator": "🛡️ Modérateur",
+      "reason": "📄 Raison"
+    }
+  },
+  "timeout": {
+    "noPermission": "❌ Vous n'avez pas la permission d'utiliser cette commande.",
+    "noMention": "❌ Vous devez mentionner un utilisateur à mettre en timeout.",
+    "invalidDuration": "❌ Vous devez spécifier une durée valide (ex: 1h, 1d, 1w).",
+    "noReason": "Aucune raison spécifiée",
+    "error": "❌ Une erreur est survenue lors du timeout.",
+    "helpTitle": "📋 Aide - Commande Timeout",
+    "helpDescription": "Cette commande permet de mettre un utilisateur en timeout.",
+    "usage": "📝 Utilisation",
+    "example": "💡 Exemples",
+    "exampleValue": "+timeout @user 1h Spam\n+timeout @user 30m Comportement toxique",
+    "dmTitle": "⏳ Vous avez été mis en timeout",
+    "server": "📍 Serveur",
+    "moderator": "👮 Modérateur",
+    "reason": "📄 Raison",
+    "duration": "⏱️ Durée",
+    "successTitle": "✅ Timeout effectué",
+    "timeoutUser": "👤 Utilisateur en timeout",
+    "textMessage": {
+      "timedout": "✅ **{user}** a été mis en timeout",
+      "reason": "📄 **Raison:** {reason}",
+      "duration": "⏱️ **Durée:** {duration}"
+    },
+    "logs": {
+      "title": "⏳ Timeout",
+      "user": "👤 Utilisateur",
+      "moderator": "🛡️ Modérateur",
+      "reason": "📄 Raison",
+      "duration": "⏱️ Durée"
+    }
+  },
+  "untimeout": {
+    "noPermission": "❌ Vous n'avez pas la permission d'utiliser cette commande.",
+    "noMention": "❌ Vous devez mentionner un utilisateur.",
+    "notTimedout": "❌ Cet utilisateur n'est pas en timeout.",
+    "noReason": "Aucune raison spécifiée",
+    "error": "❌ Une erreur est survenue lors du retrait du timeout.",
+    "helpTitle": "📋 Aide - Commande Untimeout",
+    "helpDescription": "Cette commande permet de retirer le timeout d'un utilisateur.",
+    "usage": "📝 Utilisation",
+    "example": "💡 Exemples",
+    "exampleValue": "+untimeout @user Erreur de modération\n+untimeout @user",
+    "successTitle": "✅ Timeout retiré",
+    "untimeoutUser": "👤 Utilisateur",
+    "reason": "📄 Raison",
+    "textMessage": {
+      "untimeout": "✅ Le timeout de **{user}** a été retiré",
+      "reason": "📄 **Raison:** {reason}"
+    },
+    "logs": {
+      "title": "🔓 Retrait de timeout",
+      "user": "👤 Utilisateur",
+      "moderator": "🛡️ Modérateur",
+      "reason": "📄 Raison"
+    }
+  },
+  "warn": {
+    "noPermission": "❌ Vous n'avez pas la permission d'utiliser cette commande.",
+    "noMention": "❌ Vous devez mentionner un utilisateur à avertir.",
+    "noReason": "Aucune raison spécifiée",
+    "error": "❌ Une erreur est survenue lors de l'avertissement.",
+    "helpTitle": "📋 Aide - Commande Warn",
+    "helpDescription": "Cette commande permet d'avertir un utilisateur.",
+    "usage": "📝 Utilisation",
+    "example": "💡 Exemples",
+    "exampleValue": "+warn @user Spam\n+warn @user Comportement toxique",
+    "dmTitle": "⚠️ Vous avez reçu un avertissement",
+    "server": "📍 Serveur",
+    "moderator": "👮 Modérateur",
+    "reason": "📄 Raison",
+    "successTitle": "✅ Avertissement effectué",
+    "warnedUser": "👤 Utilisateur averti",
+    "textMessage": {
+      "warned": "✅ **{user}** a été averti",
+      "reason": "📄 **Raison:** {reason}"
+    },
+    "logs": {
+      "title": "⚠️ Avertissement",
+      "user": "👤 Utilisateur",
+      "moderator": "🛡️ Modérateur",
+      "reason": "📄 Raison"
+    }
+  },
+  "unwarn": {
+    "noPermission": "❌ Vous n'avez pas la permission d'utiliser cette commande.",
+    "noMention": "❌ Vous devez mentionner un utilisateur.",
+    "invalidNumber": "❌ Vous devez spécifier un numéro d'avertissement valide.",
+    "noWarns": "❌ Cet utilisateur n'a aucun avertissement.",
+    "warnNotFound": "❌ Avertissement non trouvé.",
+    "error": "❌ Une erreur est survenue lors du retrait de l'avertissement.",
+    "helpTitle": "📋 Aide - Commande Unwarn",
+    "helpDescription": "Cette commande permet de retirer un avertissement.",
+    "usage": "📝 Utilisation",
+    "example": "💡 Exemples",
+    "exampleValue": "+unwarn @user 1",
+    "successTitle": "✅ Avertissement retiré",
+    "unwarnedUser": "👤 Utilisateur",
+    "removedWarn": "📄 Avertissement retiré",
+    "success": "✅ L'avertissement #{number} de {user} a été retiré",
+    "logs": {
+      "title": "🔄 Retrait d'avertissement",
+      "user": "👤 Utilisateur",
+      "moderator": "🛡️ Modérateur",
+      "removedWarn": "📄 Avertissement retiré"
+    }
+  },
+  "warnings": {
+    "noPermission": "❌ Vous n'avez pas la permission d'utiliser cette commande.",
+    "noMention": "❌ Vous devez mentionner un utilisateur.",
+    "error": "❌ Une erreur est survenue lors de la récupération des avertissements.",
+    "helpTitle": "📋 Aide - Commande Warnings",
+    "helpDescription": "Cette commande permet de voir les avertissements d'un utilisateur.",
+    "usage": "📝 Utilisation",
+    "example": "💡 Exemples",
+    "exampleValue": "+warnings @user",
+    "listTitle": "📝 Avertissements de {user}",
+    "noWarnings": "Cet utilisateur n'a aucun avertissement.",
+    "moderator": "👮 Modérateur",
+    "reason": "📄 Raison",
+    "total": "Total: {count} avertissement(s)"
+  },
+  "antiPing": {
+    "warnReason": "Mention d'un membre protégé",
+    "warningMessage": "❌ {user}, il est interdit de mentionner les membres protégés.\nVous avez reçu un avertissement (Warn #{warnCount})."
+  },
+  "help": {
+    "title": "📚 Liste des Commandes",
+    "description": "Voici toutes les commandes disponibles sur le bot",
+    "shopCommands": "Commandes Shop",
+    "stockCommands": "Gestion Stock (Admin)",
+    "userCommands": "Gestion Utilisateurs (Admin)",
+    "moderationCommands": "Commandes de Modération (Admin)",
+    "guideCommands": "Guides & Tutoriels",
+    
+    "shopDesc": "Affiche les informations des comptes Rockstar",
+    "shopSteamDesc": "Affiche les informations des comptes Steam",
+    "shopDiscordDesc": "Affiche les informations des comptes Discord",
+    "shopMinecraftDesc": "Affiche les informations des comptes Minecraft",
+    "shopBundleDesc": "Affiche les informations du Bundle FiveM",
+    "shopWooferDesc": "Affiche les informations du Temp Woofer",
+    
+    "stockDesc": "Affiche le stock disponible",
+    "checkStockDesc": "Vérifie le stock avant ajout",
+    "addStockDesc": "Ajoute des comptes au stock",
+    "notifDesc": "Envoie une notification de restock",
+    
+    "sendUserDesc": "Envoie des comptes à un utilisateur",
+    "addCustomerDesc": "Ajoute le rôle customer",
+    "checkUserDesc": "Vérifie l'historique d'un utilisateur",
+    
+    "banDesc": "Bannir un utilisateur",
+    "unbanDesc": "Débannir un utilisateur",
+    "timeoutDesc": "Mettre un utilisateur en timeout",
+    "untimeoutDesc": "Retirer le timeout d'un utilisateur",
+    "warnDesc": "Avertir un utilisateur",
+    "unwarnDesc": "Retirer un avertissement",
+    "warningsDesc": "Voir les avertissements d'un utilisateur",
+    
+    "cfxbanDesc": "Guide pour se spoof CFX après un ban Rockstar",
+    "emailDesc": "Instructions pour accéder aux emails Rambler",
+    "paymentDesc": "Affiche les instructions de paiement PayPal"
+  }
+}
