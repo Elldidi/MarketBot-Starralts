@@ -1,0 +1,139 @@
+GUIDE D'INSTALLATION DU BOT DISCORD STOCK MANAGER
+===========================================
+
+📋 Prérequis
+-----------
+• Node.js 16.x ou supérieur
+• Un éditeur de code (VS Code recommandé)
+• Un compte Discord avec un serveur
+
+🔧 Configuration initiale
+----------------------
+1. Créez une application Discord :
+   • Allez sur https://discord.com/developers/applications
+   • Cliquez sur "New Application"
+   • Donnez un nom à votre bot
+   • Allez dans la section "Bot"
+   • Cliquez sur "Add Bot"
+   • Copiez le token du bot
+   • Activez les "Privileged Gateway Intents" :
+     - PRESENCE INTENT
+     - SERVER MEMBERS INTENT
+     - MESSAGE CONTENT INTENT
+
+2. Invitez le bot sur votre serveur :
+   • Dans l'application Discord, section "OAuth2"
+   • Sélectionnez les scopes : bot, applications.commands
+   • Sélectionnez les permissions nécessaires :
+     - Administrator (recommandé)
+     - Ou les permissions individuelles :
+       * Gérer les messages
+       * Gérer les rôles
+       * Gérer les salons
+       * Bannir des membres
+       * Expulser des membres
+       * Voir les salons
+       * Envoyer des messages
+       * Gérer les webhooks
+       * Ajouter des réactions
+       * Mentionner @everyone
+   • Copiez l'URL générée et ouvrez-la dans un navigateur
+
+⚙️ Installation
+-------------
+1. Décompressez l'archive du bot dans un dossier
+
+2. Configurez le fichier config.js :
+   • Remplacez "YOUR_TOKEN" par le token de votre bot
+   • Modifiez les IDs des salons et rôles selon votre serveur
+   • Ajoutez vos IDs admin dans adminIds
+   • Configurez les paramètres anti-ping :
+     - enabled: true/false
+     - protectedRoleId: ID du rôle protégé
+     - protectedUsers: ["ID1", "ID2"]
+   • Configurez les messages de bienvenue/départ
+   • Configurez les messages épinglés (sticky messages)
+   • Configurez les salons de logs
+
+3. Créez les dossiers nécessaires :
+   • /data
+   • /assets (pour les images des commandes)
+
+4. Ouvrez un terminal dans le dossier du bot
+
+5. Installez les dépendances :
+   ```
+   npm install
+   ```
+
+6. Démarrez le bot :
+   ```
+   npm start
+   ```
+
+🚀 Configuration des fonctionnalités
+--------------------------------
+1. Système de stock :
+   • Créez les fichiers dans /data :
+     - steam_accounts.json
+     - rockstar_accounts.json
+     - minecraft_accounts.json
+     - discord_accounts.json
+     - bundlef_accounts.json
+     - hazelifetime.json
+     - hazeweek.json
+
+2. Système de modération :
+   • Configurez les salons de logs pour :
+     - Bans/Unbans
+     - Timeouts
+     - Warns
+     - Joins/Leaves
+     - Stock
+     - Reviews
+
+3. Messages épinglés :
+   • Configurez les salons où les messages doivent être épinglés
+   • Définissez le contenu des messages dans config.js
+
+4. Système anti-ping :
+   • Configurez le rôle protégé
+   • Ajoutez les IDs des utilisateurs protégés
+   • Personnalisez les messages d'avertissement
+
+⚠️ Points importants
+------------------
+• Ne partagez JAMAIS votre token de bot
+• Faites des sauvegardes régulières du dossier data/
+• Gardez Node.js à jour
+• Vérifiez régulièrement les logs
+• Testez les commandes dans un salon privé
+• Configurez correctement les permissions Discord
+
+🔄 Mise à jour
+------------
+1. Sauvegardez :
+   • config.js
+   • Dossier data/
+   • Dossier assets/
+2. Remplacez tous les autres fichiers
+3. Comparez et mettez à jour config.js si nécessaire
+4. Redémarrez le bot
+
+❓ Support
+--------
+Pour toute question ou assistance :
+• Consultez la documentation fournie
+• Contactez le support via Discord
+• Vérifiez les logs pour les erreurs
+• Utilisez la commande +help
+
+🔒 Sécurité
+---------
+• Changez régulièrement le token du bot
+• Limitez l'accès aux commandes admin
+• Surveillez les logs pour toute activité suspecte
+• Faites des sauvegardes régulières
+• Vérifiez régulièrement les permissions
+• Activez l'authentification à deux facteurs
+• Gardez le code source privé

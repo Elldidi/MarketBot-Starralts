@@ -1,0 +1,17 @@
+{
+  "name": "rpmarket",
+  "version": "1.0.0",
+  "description": "Bot Discord de gestion de stock",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js"
+  },
+  "dependencies": {
+    "canvas": "^3.0.1",
+    "chalk": "^4.1.2",
+    "discord.js": "^14.14.1",
+    "ms": "^2.1.3",
+    "start": "^5.1.0"
+  }
+}
