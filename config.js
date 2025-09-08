@@ -1,21 +1,21 @@
 module.exports = {
     // Token d'authentification du bot Discord
-    token: "YOUR_TOKEN",
+    token: "MTQxNDU1MDM5MDk4NDE1MTEzMA.GdHNca.0uxGBLHiPSJ5rRMOkGkNkKfXXtr0nPTHVGa4-M",
 
     // Configuration de la langue (fr ou en)
-    language: "fr",
+    language: "en",
 
     LicenseKey: "License", // contacte https://discord.gg/rpmarket  
   
     // Liste des IDs des administrateurs ayant accès aux commandes admin
-    adminIds: ["ID_USER", "ID_USER"],
+    adminIds: ["1396867015821623296", "ID_USER"],
   
     // ID du serveur Discord
-    clientId: "ID_SERVER",
+    clientId: "1414180558761754676",
   
     // IDs des rôles
-    customerRoleId: "ID_CUSTOMER", // Rôle attribué aux clients
-    adminRoleId: "ADMIN_ID",      // Rôle administrateur
+    customerRoleId: "1414180559080525884", // Rôle attribué aux clients
+    adminRoleId: "1414180559080525890",      // Rôle administrateur
     welcomeRoleId: "ROLE_ID", // Rôle donné automatiquement aux nouveaux membres
   
     // Système anti-doublons
@@ -107,7 +107,7 @@ module.exports = {
     },
 
     welcome: {
-      enabled: true,
+      enabled: false,
       channelId: "CHANNEL_ID",
       useEmbed: true, // Utiliser un embed ou un message texte simple, false = désactivé true = activé !
       message: {
@@ -124,7 +124,7 @@ module.exports = {
         }
       },
       dmWelcome: {
-        enabled: true,
+        enabled: false,
         useEmbed: true,
         content: "Bienvenue sur {server} ! N'hésite pas à lire le règlement.", // variable disponible, {user} - Nom d'utilisateur {userTag} - Tag complet de l'utilisateur {userId} - ID de l'utilisateur{userMention} - Mention de l'utilisateur {server} - Nom du serveur {memberCount} - Nombre de membres {createdAt} - Date de création du compte {joinedAt} - Date d'arrivée sur le serveur
         embed: {
@@ -136,7 +136,7 @@ module.exports = {
     },
 
     goodbye: {
-      enabled: true,
+      enabled: false,
       channelId: "CHANNEL_ID",
       useEmbed: true,
       message: {
@@ -159,7 +159,7 @@ module.exports = {
       state: "dnd", // État du bot : "online" (✅ En ligne), "dnd" (🔴 Ne pas déranger), "idle" (🟡 Inactif), "invisible" (⚫ Hors ligne)
       activities: [
         {
-          name: "RP Market",
+          name: "Starr Alts",
           type: "WATCHING", 
           enabled: true // Activer = true / désactiver = false ce statut
         },
@@ -208,4 +208,5 @@ module.exports = {
         message: "__**Message épinglé:**__\n\n**__Nous n'acceptons les avis que dans le format suivant:__**\n\n```+rep [TAGSTAFF] [Combien] [PRODUITS] \n\nExemple:\n+rep @staffping 1x Rockstar```"
       }
     }
+
   };
